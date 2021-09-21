@@ -2,12 +2,16 @@
 @import "./reset";
 @import "./variables";
 
-.section-one {
-  background-color: $primary-color;
-  height: 100vh;
+@mixin flexCenter {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section-one {
+  background-color: $primary-color;
+  height: 100vh;
+  @include flexCenter();
 
   #{&}__division {
     width: 400px;
