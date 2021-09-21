@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "./reset";
+@import "./variables";
+
+.section-one {
+  background-color: $primary-color;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #{&}__division {
+    width: 400px;
+    background-color: #63b4b8;
+    padding: 20px;
+    .__heading {
+      color: $text-color-dark;
+    }
+    .__paragraph {
+      color: $text-color-light;
+      margin-top: 5px;
+    }
+    hr {
+      border: none;
+      height: 2px;
+      width: 30px;
+      background-color: $primary-color;
+    }
+  }
+}
